@@ -1,12 +1,11 @@
 k = int(input())
 total = []
-
+ 
 for n in range(k):
-    price = int(input())
-    if price != 0:
-        total.append(price)
-    else:
+    num = int(input())
+    if num == 0:
         total.pop()
+    else:
+        total.append(num)
 
 print(sum(total))
-    
