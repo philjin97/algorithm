@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+# UTF-8 encoding when using korean
+n = int(input())
+line = input()
+new_line = ''
+
+for a in line:
+	if a.isupper() == True:
+		new_line += a.lower()
+	
+	else:
+		new_line += a.upper()
+	
+	
+print(new_line)
