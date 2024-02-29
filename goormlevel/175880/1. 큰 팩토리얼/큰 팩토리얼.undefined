@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+# UTF-8 encoding when using korean
+n = int(input())
+fact = n
+
+while n != 1:
+	n -= 1
+	fact = fact * n
+
+	
+result = fact % 1000000007	
+print(result)
+	
