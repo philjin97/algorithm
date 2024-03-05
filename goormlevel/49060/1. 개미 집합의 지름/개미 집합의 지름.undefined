@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+# UTF-8 encoding when using korean
+
+# Graph로 개미 집합 구현. 노드 = 개미수, edge를 D로 최단거리
+# 각 노드마다 요구조건 충족 계산. 최솟값 저장. 
+
+def two_pointer(lst, D):
+	start, end = 0, 0
+	length = 0
+	
+	while start < n and end < n:
+		if lst[end] - lst[start] <= D:
+			length = max(length, end-start+1)
+			end += 1
+		else: 
+			start +=1 
+	return n - length
+	
+
+n, d = map(int, input().split())
+ant = sorted(list(map(int, input().split())))
+print(two_pointer(ant, d))
